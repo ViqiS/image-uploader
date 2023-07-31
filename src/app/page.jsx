@@ -1,11 +1,10 @@
-import { useRoutes } from 'react-router-dom' 
-import HomeImage from './HomeImage'
-import './App.css'
+import uploadImage from "./uploadImage/page"
+
 
 export default function App() {
   return (
     <div>
-      <HomeImage/>
+      <uploadImage/>
     </div>
   )
 }
