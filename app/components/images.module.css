@@ -1,0 +1,15 @@
+.containerImages {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.getImages {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: cover;
+  align-items: center;
+}

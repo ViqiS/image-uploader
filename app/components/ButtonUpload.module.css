@@ -1,0 +1,128 @@
+.containerUpdateImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+/* Carga de imagen */
+.figure {
+  width: 17em;
+  height: 13em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.rectangle {
+  width: 17em;
+  height: 180px;
+  background-color: rgba(246, 248, 251, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 3px dashed rgba(151, 190, 244, 1)
+}
+.image {
+  background-color: white;
+  width: 114px;
+  height: 88px;
+  border-radius: 8px;
+}
+.subtext,
+.subtext2{
+  color:rgba(189, 189, 189, 1);
+} 
+/* Cuando la imagen está cargada */
+.green {
+  background-color: rgb(203, 255, 169);
+  border: 3px dashed rgb(255, 164, 91);
+}
+.writeName {
+  color:  rgb(255, 164, 91);
+  padding: 0.1em;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+/* Carga, nombre y envio de imagen */
+.containerInput {
+  width: 280px;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.fileSelect {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100px;
+  margin-right: 0.5em;
+  border-radius: 4px;
+  border: 1px solid #FBAB7E;
+  transition: 0.5s ease;
+}
+.fileSelect::before {
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);  
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Choose a file'; 
+  font-size: 0.8em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.fileSelect input[type='file'] {
+  opacity: 0;
+  width: 7em;
+  height: 2em;
+  display: inline-block;
+  cursor: pointer;
+}
+.fileSelect:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+.inputName::placeholder {
+  font-size: 12px;
+}
+.inputName {
+  width: 11em;
+  margin-right: 1em;
+  font-family: 'poppins';
+  font-size: 0.7em;
+  border: 1px solid #FBAB7E; 
+  border-radius: 5px;
+  outline-color: rgb(174, 230, 230);
+  transition: 0.5s ease;
+}
+.inputName:focus {
+  border: 1px solid #F7CE68;
+}
+.updateImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonUpdate {
+  color: rgb(255, 164, 91);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+.buttonUpdate:hover {
+  color: rgb(174, 230, 230);
+  border: rgb(174, 230, 230);
+}
