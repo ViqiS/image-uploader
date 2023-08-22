@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <span className='created'>
-          Created by <a href='https://www.linkedin.com/in/victoria-escalada/'>Victoria Escalada</a> 
+          <p className='VictoriaEscalada' >Created by <a href='https://www.linkedin.com/in/victoria-escalada/'>Victoria Escalada</a> </p>
         </span>
         </body>
     </html>

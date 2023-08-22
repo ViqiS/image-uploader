@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
+  height: 400px;
   width: 300px;
 }
 /* Carga de imagen */
@@ -109,6 +109,11 @@
 .inputName:focus {
   border: 1px solid #F7CE68;
 }
+.sendImage {
+  display: flex;
+  flex-direction: row
+  ;
+}
 .updateImage {
   display: flex;
   align-items: center;
@@ -125,4 +130,10 @@
 .buttonUpdate:hover {
   color: rgb(174, 230, 230);
   border: rgb(174, 230, 230);
+}
+.errorContainer {
+  width: 20em;
+  height: 2em;
+  font-size: 0.8em;
+  margin: 0;
 }

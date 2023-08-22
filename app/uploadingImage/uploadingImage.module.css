@@ -1,0 +1,46 @@
+.sectionUploading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: fit-content;
+  background-color: rgb(251, 246, 240);
+  border-radius: 8px;
+}
+.containerUploading {
+  width: 16em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.uploading{
+  margin-bottom: 1em;
+}
+.processBarSpace {
+  width: 15em;
+  height: 0.5em;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.processBarValue {
+  height: 0.5em;
+  width: 100%;
+  background-color: rgb(255, 164, 91);
+  animation: progressbar 1s ease-in-out;
+  animation-delay: .3s ;
+  animation-direction: forwards;
+}
+
+@keyframes progressbar {
+  0% {
+    width: 0%;
+  } 
+  100% {
+    width: 100%;
+  }
+  }
+

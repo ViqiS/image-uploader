@@ -1,15 +1,77 @@
 .containerImages {
-  width: 50vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 30px;
+  height: 300px;
+  width: 300px;
 }
+
+.image {
+  width: 17em;
+  height: 18em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
 .getImages {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   align-items: center;
+  margin-bottom: 2em;
+  border-radius: 8px;
+}
+
+.containerUrl {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 17em;
+}
+
+.urlImage {
+  flex: 1;
+  font-size: 0.8em;
+  padding: 0.5em;
+  border: 1px solid #FBAB7E ;
+  border-radius: 5px;
+}
+
+.urlImageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.containerButton {
+  display: flex;
+  align-items: center;
+}
+
+.copy {
+  width: 5em;
+  height: 2em;
+  font-size: 0.8em;
+  margin-left: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #FBAB7E;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  cursor: pointer;
+}
+
+/* Nuevos estilos para el mensaje de éxito */
+.successMessageContainer {
+  overflow: hidden;
+  width: 17em;
+  height: 2em;
+  display: flex;
+  justify-content: end;
+}
+
+.successMessage {
+  font-size: 0.7em;
+  margin-top: 0.5em;
 }

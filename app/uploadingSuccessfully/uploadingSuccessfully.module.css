@@ -1,0 +1,28 @@
+.container {
+  width: 300px;
+  height: 469px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(251, 246, 240);
+  border-radius: 8px;
+  box-shadow: 0px 10px 50px -3px rgb(255, 164, 91);
+}
+.uploadedImage {
+  width: 15em;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(251, 246, 240);
+}
+.check {
+  color: green;
+}
+.text {
+  color: black;
+  width: 16em;
+  font-size: 0.8em;
+  text-align: center;
+}
