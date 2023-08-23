@@ -2,7 +2,7 @@
   width: 300px;
   height: 469px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   background-color: rgb(251, 246, 240);
@@ -25,4 +25,20 @@
   width: 16em;
   font-size: 0.8em;
   text-align: center;
+}
+.containerReturn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1em;
+  width: 15em;
+  height: 2em;
+}
+.return {
+  color: black;
+  padding: 1px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgb(255, 164, 91);
+  border-radius: 50%;
 }

@@ -27,8 +27,10 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
       setTimeout(() => setErrorMessage(false), 1500)
       return;
     }
-    setErrorMessage(null)
+
     onUploadStart();
+    setErrorMessage(null)
+    
 
     const formData = new FormData();
     formData.append('name', imageName);

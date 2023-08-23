@@ -23,7 +23,7 @@ export default function App() {
       {uploading ? (
         <UploadingImage />
       ) : uploadSuccess ? (
-        <UploadingSuccessfully />
+        <UploadingSuccessfully/>
       ) : (
         <UploadImage
           onUploadStart={handleUploadStart}
