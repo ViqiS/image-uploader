@@ -88,7 +88,7 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
       )}
       <div className={styles.containerInput}>
         <div className={styles.fileSelect}>
-          <input className={styles.inputSelect} type="file" onChange={handleImageChange} />
+          <input className={styles.inputSelect} type="file" onChange={() => handleImageChange()} />
         </div>
         <div className={styles.sendImage}>
           <input
@@ -99,7 +99,7 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
             onChange={handleNameChange}
           />
           <div className={styles.updateImage}>
-          <BsArrowUpCircleFill className={styles.buttonUpdate} onClick={handleUpload}/>
+          <BsArrowUpCircleFill className={styles.buttonUpdate} onClick={() => handleUpload()}/>
         </div>
         </div>
       </div>
