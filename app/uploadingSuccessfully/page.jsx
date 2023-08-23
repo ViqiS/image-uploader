@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+'use client'
+import React from 'react';
 import GetImagesBack from '../components/Images';
 import styles from './uploadingSuccessfully.module.css';
 import { BsCheckCircleFill } from 'react-icons/bs';
