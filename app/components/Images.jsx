@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import styles from './images.module.css';
+import Image from 'next/image';
 
 function GetImagesBack() {
   const [data, setData] = useState([]);
@@ -31,7 +32,7 @@ function GetImagesBack() {
     <div className={styles.containerImages}>
       {latestImage && (
         <div className={styles.image} key={latestImage.id}>
-          <img className={styles.getImages} src={latestImage.image} alt={latestImage.name} />
+          <Image className={styles.getImages}  width={200} height={100} src={latestImage.image} alt={latestImage.name} />
           <div className={styles.containerUrl}>
             <div className={styles.urlImageContainer}>
               <input
@@ -41,7 +42,7 @@ function GetImagesBack() {
                 className={styles.urlImage}
                 readOnly
               />
-              <button className={styles.copy} onClick={handleCopy}>Copy</button>
+              <button className={styles.copy} onClick={() => handleCopy()}>Copy</button>
             </div>
             <div className={styles.successMessageContainer}>
             <p className={styles.successMessage}>{copied ? 'Copied to clipboard!' : ''}</p>

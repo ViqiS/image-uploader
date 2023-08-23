@@ -4,6 +4,7 @@ import axios from 'axios';
 import { BsArrowUpCircleFill } from 'react-icons/bs';
 import styles from './PostImagesBack.module.css';
 import UploadingImage from '../uploadingImage/page';
+import Image from 'next/image';
 
 function PostImagesBack({ onUploadStart, onUploadFinish }) {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -71,11 +72,12 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
         // Renderiza el resto del contenido cuando no hay carga en progreso
         <figure 
           className={styles.figure} 
-          onDrop={handleDrop}
+          onDrop={() => handleDrop()}
           onDragOver={(e) => e.preventDefault()}
           onDragEnter={(e) => e.preventDefault()}>
             <div className={`${styles.rectangle} ${uploadSuccess ? styles.green : ''}`}>
-              <img className={styles.image} src="/image.svg" alt="carga imagen" />
+            <Image className={styles.image} width={114} height={88} src="/image.svg" alt="carga imagen" />
+
               {uploadSuccess ? (
                 <p className={styles.writeName}>Image uploaded, fill in the name field</p>
               ) : (
