@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react';
 import UploadImage from './uploadImage/page';
 import UploadingImage from './uploadingImage/page';
