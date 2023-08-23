@@ -11,8 +11,8 @@ function UploadingSuccessfully() {
 
   return (
     <section className={styles.container}>
-      <div className={styles.containerReturn}>
-      <IoReturnDownBackOutline className={styles.return} onClick={() => handleReturnClick()} />
+      <div className={styles.containerReturn} onClick={() => handleReturnClick()}>
+      <IoReturnDownBackOutline className={styles.return} />
       </div>
       <div className={styles.uploadedImage}>
         <BsCheckCircleFill className={styles.check} />
