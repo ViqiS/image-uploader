@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import GetImagesBack from '../components/Images';
 import styles from './uploadingSuccessfully.module.css';
 import { BsCheckCircleFill } from 'react-icons/bs';
@@ -11,8 +11,11 @@ function UploadingSuccessfully() {
 
   return (
     <section className={styles.container}>
-      <div className={styles.containerReturn} onClick={() => handleReturnClick()}>
-      <IoReturnDownBackOutline className={styles.return} />
+      <div className={styles.containerReturn}>
+        <IoReturnDownBackOutline
+          className={styles.return}
+          onClick={() => handleReturnClick()}
+        />
       </div>
       <div className={styles.uploadedImage}>
         <BsCheckCircleFill className={styles.check} />
