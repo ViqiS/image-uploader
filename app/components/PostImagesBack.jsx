@@ -25,12 +25,13 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
   const handleUpload = () => {
     if (!selectedImage || !imageName) {
       setErrorMessage("Debes cargar una imagen y un nombre");
-      setTimeout(() => setErrorMessage(false), 1500)
+      setTimeout(() => setErrorMessage(""), 1500);
       return;
     }
+  }
 
     onUploadStart();
-    setErrorMessage(null)
+    setErrorMessage(null);
     
 
     const formData = new FormData();
@@ -55,7 +56,6 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
         setUploadSuccess(false); // Cambia uploadSuccess a false después de error
         onUploadFinish(); // Finaliza el proceso de carga en caso de error
       });
-  };
 
   const handleDrop = (event) => {
     event.preventDefault();
