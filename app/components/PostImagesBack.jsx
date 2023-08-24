@@ -90,7 +90,7 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
       )}
       <div className={styles.containerInput}>
         <div className={styles.fileSelect}>
-        <input className={styles.inputSelect} type="file" onChange={() => handleImageChange()} />
+        <input className={styles.inputSelect} type="file" onChange={event => handleImageChange(event)} />
         </div>
         <div className={styles.sendImage}>
           <input
