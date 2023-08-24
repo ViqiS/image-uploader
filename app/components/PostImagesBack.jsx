@@ -98,7 +98,7 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
             type="text"
             placeholder="Image name"
             value={imageName}
-            onChange={handleNameChange}
+            onChange={event => handleNameChange(event)}
           />
           <div className={styles.updateImage}>
           <BsArrowUpCircleFill className={styles.buttonUpdate} onClick={() => handleUpload()} />
