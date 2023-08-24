@@ -28,14 +28,14 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
       setTimeout(() => setErrorMessage(""), 1500);
       return;
     }
+  
     onUploadStart();
     setErrorMessage(null);
-  }
-
+  
     const formData = new FormData();
     formData.append('name', imageName);
     formData.append('image', selectedImage);
-
+  
     axios.post('https://db-image-dev.fl0.io/api/v1/uploadImage', formData, {
       onUploadProgress: (progressEvent) => {
         const progressPercentage = Math.round((progressEvent.loaded / progressEvent.total) * 100);
@@ -45,7 +45,7 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
       .then((response) => {
         console.log('Imagen cargada con éxito:', response.data);
         setUploadProgress(0); // Reinicia el progreso después de cargar
-        setUploadSuccess(true); // Cambia uploadSuccess a false después de cargar con éxito
+        setUploadSuccess(true); // Cambia uploadSuccess a true después de cargar con éxito
         onUploadFinish(); // Finaliza el proceso de carga
       })
       .catch((error) => {
@@ -54,7 +54,8 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
         setUploadSuccess(false); // Cambia uploadSuccess a false después de error
         onUploadFinish(); // Finaliza el proceso de carga en caso de error
       });
-
+  };
+  
   const handleDrop = (event) => {
     event.preventDefault();
     const droppedImage = event.dataTransfer.files[0];
