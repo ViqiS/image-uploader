@@ -71,7 +71,7 @@ function PostImagesBack({ onUploadStart, onUploadFinish }) {
         // Renderiza el resto del contenido cuando no hay carga en progreso
         <figure 
           className={styles.figure} 
-          onDrop={() => handleDrop()}
+          onDrop={handleDrop}
           onDragOver={(e) => e.preventDefault()}
           onDragEnter={(e) => e.preventDefault()}>
             <div className={`${styles.rectangle} ${uploadSuccess ? styles.green : ''}`}>
