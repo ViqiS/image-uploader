@@ -29,7 +29,7 @@ function GetImagesBack() {
   }, []);
 
   return (
-    <div className={styles.containerImages}>
+    <section className={styles.containerImages}>
       {latestImage && (
         <div className={styles.image} key={latestImage.id}>
           <Image className={styles.getImages}  width={200} height={100} src={latestImage.image} alt={latestImage.name} />
@@ -50,7 +50,7 @@ function GetImagesBack() {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }
 

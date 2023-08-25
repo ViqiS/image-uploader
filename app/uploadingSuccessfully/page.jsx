@@ -17,12 +17,14 @@ function UploadingSuccessfully() {
           className={styles.return}
           onClick={() => handleReturnClick()}
         />
+        <BsCheckCircleFill className={styles.check} />
       </div>
       <div className={styles.uploadedImage}>
-        <BsCheckCircleFill className={styles.check} />
         <p className={styles.text}>Upload Successfully!!!</p>
       </div>
+      <div className={styles.containerImage}>
       <GetImagesBack />
+      </div>
     </section>
   );
 }
